@@ -1,0 +1,167 @@
+/*@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap"*/  /* Link no css (ja ta no index)*/
+
+:root
+{
+  --color-deeperPurple: #1c0025;
+  --color-deepPurple: #250033;
+  --color-purple: #370049;
+  --color-lightGrey: #cacaca;
+}
+
+* /*Desconsidera user agent*/
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body
+{
+  background: #250033;
+  font-family: 'Roboto', sans-serif; /* Nome da familia de fonte*/
+  color: white; /* Cor do texto no body */
+}
+
+header
+{
+  padding: 32px; 
+  border-bottom: 1px solid white;
+  background: #370049;    /* ou background: rgba(0, 0, 0, 0.1); */
+}
+
+.links /* Alinha o text no centro */
+{
+  text-align: center;
+}
+
+.links a /* Estilizar links do header */
+{
+  color: #cacaca;
+  font-size: 18px;
+  line-height: 28px; /* 10 pixel a mais do que o font size */
+  margin: 0 16px; /* tudo (1) -- top/bottom right/left (2) -- top right bottom left (4) */
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.links a:hover /* Quando o mouse estiver em cima */
+{
+  color: white;
+  transition: color 0.4s; /* Transicao entre cores */  
+}
+
+.superior
+{
+  text-align: center;
+  padding: 32px;
+}
+
+.superior img
+{
+  border-radius: 30%; /* Arredondar borda, similar a margin (numero de valores) */ 
+  border: 5px solid white; 
+  background-color: #1c0025;
+  height: 250px;
+}
+
+.superior h1
+{
+  font-size: 42px;
+  line-height: 52px;
+  /*font-weight: bold;*/  /* Deixa o texto em negrito (precisa selecionar no google fonts)*/
+}
+
+.superior h2
+{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.superior p
+{
+  max-width: 500px; /* Quando chegar nesse tamanho, quebrar linha */
+  margin: 30px auto; /* Realinhar no centro se perder o estilo*/
+  font-size: 24px;
+  line-height: 34px;
+}
+
+footer
+{
+  padding: 24px; 
+  border-top: 1px solid white;
+  background: #370049;
+  margin-top: 44px;
+}
+
+.media
+{
+  text-align: center;
+}
+
+.media a
+{
+  color: #cacaca;
+  font-size: 18px;
+  line-height: 28px; 
+  margin: 0 16px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+
+
+.cards
+{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card
+{
+  background-color: #370049;
+}
+
+/*.card1__image-container
+{
+  width: 400px;
+}
+*/
+
+.card__image-container img /* Respeitar tamanho */
+{
+  width: 100%;
+}
+
+.imagem
+{
+  text-align: center;
+  width: 307px;
+  height: 300px;
+}
+
+.conteudo,
+.info
+{
+  padding: 24px;
+}
+
+.info
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.preco
+{
+  background-color: #250033;
+  /* filter: brightness(90%); */ /* Filter = customizacao e efeitos */
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
